@@ -107,7 +107,7 @@
     "yaml": "^2.4.2"
   },
   "scripts": {
-    "serve": "vite",
+    "serve": "vite build",
     "build": "npx tailwindcss -o ./static/styles/main.css --minify",
     "watch": "npx tailwindcss -i ./static/styles/input.css -o ./static/styles/main.css --watch"
   },

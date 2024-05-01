@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nazim Fabrication | Home</title>
+    <link rel="stylesheet" href="../static/styles/main.css">
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+</head>
+
+<body class="bg-gray-50">
+    <header class="bg-primary-900 py-4 px-6 md:px-12 lg:px-20 flex justify-between items-center">
+        <!-- Logo -->
+        <div class="flex items-center">
+            <a href="/" class="text-white font-bold text-xl md:text-2xl">Nazim Fabrication</a>
+        </div>
+
+        <!-- Navigation Menu (Desktop and Tablet) -->
+        <nav class="hidden md:flex items-center space-x-6">
+            <a href="#" class="text-white hover:text-gray-300">About Us</a>
+            <a href="#" class="text-white hover:text-gray-300">Services</a>
+            <a href="#" class="text-white hover:text-gray-300">Portfolio</a>
+            <a href="#" class="text-white hover:text-gray-300">Contact Us</a>
+        </nav>
+
+
+        <!-- Burger Menu (Mobile) -->
+        <section class="mobile-wrapper md:hidden overflow-hidden relative flex items-center justify-end space-x-6">
+
+            <!-- Call Now CTA (Mobile) -->
+            <a href="tel:1234567890"
+                class="md:hidden text-white bg-primary-500 hover:bg-primary-600 px-4 py-2 rounded-md flex items-center">
+                <span class="material-symbols-outlined">
+                    call
+                </span>
+            </a>
+            <div class="burger w-12 flex flex-col justify-center items-center" id="burger-menu">
+                <div class="item-1 w-full h-0.5 bg-white rounded-md mb-2"></div>
+                <div class="item-2 w-full h-0.5 bg-white rounded-md mb-2"></div>
+                <div class="item-3 w-full h-0.5 bg-white rounded-md"></div>
+            </div>
+
+            <!-- Overlay Navigation Menu (Hidden by default) -->
+            <!-- HTML -->
+            <div id="overlay-menu"
+                class="hidden fixed inset-0 bg-primary-900 z-50 flex-col items-center justify-center space-y-6 transition-opacity duration-300 ease-in-out">
+                <!-- Menu items -->
+                <a href="#" class="text-white hover:text-gray-300">About Us</a>
+                <a href="#" class="text-white hover:text-gray-300">Services</a>
+                <a href="#" class="text-white hover:text-gray-300">Portfolio</a>
+                <a href="#" class="text-white hover:text-gray-300">Contact Us</a>
+
+                <!-- Close button -->
+                <button id="close-menu" class="text-white absolute top-4 right-4 focus:outline-none">
+                    <span class="material-symbols-outlined">
+                        close
+                    </span>
+                </button>
+            </div>
+        </section>
+
+
+        <!-- Contact Us CTA (Tablet and Desktop) -->
+        <a href="/contact"
+            class="hidden md:inline-block text-white bg-primary-500 hover:bg-primary-600 px-4 py-2 rounded-md">Contact
+            Us</a>
+    </header>
+
+    <main>
+        <!-- Hero Section with Background Image using Tailwind CSS -->
+        <section
+            class="hero bg-cover bg-center bg-[url('../media/images/hero.webp')] text-white py-20 px-4 md:px-12 lg:px-20">
+            <div class="container mx-auto">
+                <div class="text-center">
+                    <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4">Quality Metal Fabrication Services
+                    </h1>
+                    <p class="text-lg md:text-xl mb-8">Transforming your ideas into durable metal structures</p>
+                    <a href="#services"
+                        class="bg-primary-500 hover:bg-primary-600 text-white px-6 py-3 rounded-full uppercase text-sm md:text-base font-semibold shadow-lg transition duration-300">Explore
+                        Our Services</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services px-5 bg-gray-100 py-20">
+            <div class="container mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Our Services</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Service Card 1 -->
+                    <div class="bg-white rounded-lg shadow-md flex flex-col justify-between">
+                        <!-- Service Image -->
+                        <img src="../static/media/images/work/gate.jpg" alt="Metal Gates"
+                            class="w-full h-48 object-cover rounded-t-lg">
+                        <div class="p-6">
+                            <!-- Service Title -->
+                            <h3 class="text-xl font-semibold mb-2">Metal Gates</h3>
+                            <!-- Pricing Range -->
+                            <p class="text-gray-600 mb-2">Pricing Range: ₹800 - ₹1400</p>
+                            <!-- Service Description -->
+                            <p class="text-gray-600 mb-4">We specialize in designing and fabricating custom metal gates
+                                for residential and commercial properties.</p>
+                            <!-- Inquire Now CTA -->
+                            <a href="#"
+                                class="text-white bg-primary-500 hover:bg-primary-600 px-4 py-2 rounded-md font-semibold">Inquire
+                                Now</a>
+                        </div>
+                    </div>
+
+                    <!-- Service Card 2 -->
+                    <div class="bg-white rounded-lg shadow-md flex flex-col justify-between">
+                        <!-- Service Image -->
+                        <img src="../static/media/images/work/railing.jpg" alt="Steel Railings"
+                            class="w-full h-48 object-cover rounded-t-lg">
+                        <div class="p-6">
+                            <!-- Service Title -->
+                            <h3 class="text-xl font-semibold mb-2">Steel Railings</h3>
+                            <!-- Pricing Range -->
+                            <p class="text-gray-600 mb-2">Pricing Range: ₹110 per sq foot</p>
+                            <!-- Service Description -->
+                            <p class="text-gray-600 mb-4">Our expert craftsmen create durable and stylish steel railings
+                                to enhance the safety and aesthetics of your property.</p>
+                            <!-- Inquire Now CTA -->
+                            <a href="#"
+                                class="text-white bg-primary-500 hover:bg-primary-600 px-4 py-2 rounded-md font-semibold">Inquire
+                                Now</a>
+                        </div>
+                    </div>
+
+                    <!-- Service Card 3 -->
+                    <div class="bg-white rounded-lg shadow-md flex flex-col justify-between">
+                        <!-- Service Image -->
+                        <img src="../static/media/images/work/shutter.jpg" alt="Roofing Sheds"
+                            class="w-full h-48 object-cover rounded-t-lg">
+                        <div class="p-6">
+                            <!-- Service Title -->
+                            <h3 class="text-xl font-semibold mb-2">Shutter</h3>
+                            <!-- Pricing Range -->
+                            <p class="text-gray-600 mb-2">Pricing Range: ₹200-₹350 per sq foot</p>
+                            <!-- Service Description -->
+                            <p class="text-gray-600 mb-4">We offer high-quality rolling shutters to protect your
+                                property
+                                from the elements while adding value and functionality.</p>
+                            <!-- Inquire Now CTA -->
+                            <a href="#"
+                                class="text-white bg-primary-500 hover:bg-primary-600 px-4 py-2 rounded-md font-semibold">Inquire
+                                Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- View All Services Link -->
+                <div class="text-center mt-8">
+                    <a href="#" class="text-primary-500 hover:text-primary-700 text-lg font-semibold">View All
+                        Services</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section class="about-us px-5 bg-white py-20">
+            <div class="container mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">About Us</h2>
+                <div class="flex flex-col md:flex-row items-center justify-center md:justify-between">
+                    <!-- About Us Image -->
+                    <div class="w-full md:w-1/2 mb-8 md:mb-0 md:mr-8">
+                        <img src="https://images.pexels.com/photos/73833/weld-hot-soldering-radio-welder-73833.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                            alt="About Us Image" class="w-full h-[350px] object-cover rounded-lg shadow-md">
+                    </div>
+                    <!-- About Us Content -->
+                    <div class="w-full md:w-1/2">
+                        <p class="text-gray-600 mb-4">Nazim Fabricators has been a trusted name in metal fabrication for
+                            over 15 years. We take pride in our craftsmanship and dedication to quality, serving clients
+                            in Kharghar, Navi Mumbai, and beyond.</p>
+                        <p class="text-gray-600 mb-4">Our team of skilled fabricators specializes in a wide range of
+                            metal fabrication services, including gate fabrication, grill design, rolling shutters,
+                            collapsible gates, steel railing, roofing sheds, aluminum sliding doors, and more.</p>
+                        <p class="text-gray-600 mb-4">At Nazim Fabricators, we believe in delivering superior
+                            craftsmanship, innovative design solutions, and exceptional customer service. Our goal is to
+                            exceed our clients' expectations and build lasting relationships based on trust and
+                            reliability.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- work section -->
+        <section class="work px-5 py-20">
+            <div class="container mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Our Work</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Portfolio Item 1 -->
+                    <div class="bg-white rounded-lg shadow-md">
+                        <!-- Image -->
+                        <img src="https://via.placeholder.com/600x400" alt="Portfolio Item 1"
+                            class="w-full h-64 object-cover rounded-t-lg">
+                        <!-- Content -->
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">Metal Gate Installation</h3>
+                            <p class="text-gray-600">Installed custom-designed metal gates for a residential property in
+                                Kharghar, Navi Mumbai. The gates enhance security and add aesthetic appeal to the
+                                property.</p>
+                            <!-- Client Info -->
+                            <div class="flex items-center mt-4">
+                                <img src="https://via.placeholder.com/64x64" alt="Client Photo"
+                                    class="w-8 h-8 rounded-full mr-2">
+                                <div>
+                                    <p class="font-semibold">ABC Builders</p>
+                                    <p class="text-sm text-gray-500">Rating: 4.5/5</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 2 -->
+                    <div class="bg-white rounded-lg shadow-md">
+                        <!-- Image -->
+                        <img src="https://via.placeholder.com/600x400" alt="Portfolio Item 2"
+                            class="w-full h-64 object-cover rounded-t-lg">
+                        <!-- Content -->
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">Steel Railing Fabrication</h3>
+                            <p class="text-gray-600">Fabricated and installed steel railings for a commercial building
+                                project
+                                in Navi Mumbai. The railings meet safety standards and enhance the building's
+                                architectural
+                                design.</p>
+                            <!-- Client Info -->
+                            <div class="flex items-center mt-4">
+                                <img src="https://via.placeholder.com/64x64" alt="Client Photo"
+                                    class="w-8 h-8 rounded-full mr-2">
+                                <div>
+                                    <p class="font-semibold">XYZ Constructions</p>
+                                    <p class="text-sm text-gray-500">Rating: 4.8/5</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 3 -->
+                    <div class="bg-white rounded-lg shadow-md">
+                        <!-- Image -->
+                        <img src="https://via.placeholder.com/600x400" alt="Portfolio Item 3"
+                            class="w-full h-64 object-cover rounded-t-lg">
+                        <!-- Content -->
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">Roofing Shed Construction</h3>
+                            <p class="text-gray-600">Constructed roofing sheds for a warehouse project in Kharghar. The
+                                sheds
+                                provide protection from harsh weather conditions and enhance the functionality of the
+                                warehouse
+                                space.</p>
+                            <!-- Client Info -->
+                            <div class="flex items-center mt-4">
+                                <img src="https://via.placeholder.com/64x64" alt="Client Photo"
+                                    class="w-8 h-8 rounded-full mr-2">
+                                <div>
+                                    <p class="font-semibold">PQR Developers</p>
+                                    <p class="text-sm text-gray-500">Rating: 4.2/5</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Repeat for more Portfolio Items -->
+                </div>
+                <!-- View Portfolio Link -->
+                <div class="text-center mt-8">
+                    <a href="#" class="text-primary-500 hover:text-primary-600 font-semibold">View Work</a>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="contact-us px-5 py-20 bg-gray-100">
+            <div class="container mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Contact Us</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Shop Photo -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                        <img src="../static/media/images/shop.JPG" alt="Shop Photo" class="w-full ">
+                    </div>
+                    <!-- Contact Information -->
+                    <div class="bg-white rounded-lg shadow-md p-6 flex flex-col justify-center">
+                        <h3 class="text-xl font-semibold mb-4">Our Address</h3>
+                        <p class="text-gray-600 mb-2">Shop no 2, Sujata CHS, Plot no 143, Sector-13</p>
+                        <p class="text-gray-600 mb-2">Kharghar, Navi Mumbai</p>
+                        <p class="text-gray-600 mb-4">Pin code: 410210</p>
+                        <!-- Call Now Button -->
+                        <a href="tel:+911234567890"
+                            class="text-center text-white bg-primary-500 hover:bg-primary-600 px-6 py-3 rounded-md font-semibold mb-4">Call
+                            Now</a>
+                        <!-- View on Google Maps Button -->
+                        <a href="https://maps.app.goo.gl/pVx9EjqT6xzT1tSG8"
+                            class="text-center text-white bg-primary-500 hover:bg-primary-600 px-6 py-3 rounded-md font-semibold">View
+                            on Google Maps</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials px-5 py-20">
+            <div class="container mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Client Testimonials</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Testimonial 1 -->
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <blockquote class="text-lg text-gray-800 italic mb-4">
+                            "Great service! Nazim Fabricators delivered exceptional quality work within the promised
+                            timeline. Highly recommended!"
+                        </blockquote>
+                        <div class="flex items-center justify-between mb-2">
+                            <div class="text-yellow-400">
+                                ★★★★☆
+                            </div>
+                            <div class="text-gray-600 ml-2">4.5/5</div>
+                        </div>
+                        <p class="text-gray-600 font-semibold">John Doe</p>
+                        <p class="text-gray-500">CEO, ABC Builders</p>
+                    </div>
+                    <!-- Testimonial 2 -->
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <blockquote class="text-lg text-gray-800 italic mb-4">
+                            "Professional and efficient! Nazim Fabricators exceeded our expectations. Will definitely
+                            work with them again!"
+                        </blockquote>
+                        <div class="flex items-center justify-between mb-2">
+                            <div class="text-yellow-400">
+                                ★★★★★
+                            </div>
+                            <div class="text-gray-600 ml-2">4.8/5</div>
+                        </div>
+                        <p class="text-gray-600 font-semibold">Jane Smith</p>
+                        <p class="text-gray-500">Founder, XYZ Construction</p>
+                    </div>
+                    <!-- Testimonial 3 -->
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <blockquote class="text-lg text-gray-800 italic mb-4">
+                            "Amazing craftsmanship! Nazim Fabricators pays attention to detail and delivers top-notch
+                            results."
+                        </blockquote>
+                        <div class="flex items-center justify-between mb-2">
+                            <div class="text-yellow-400">
+                                ★★★★☆
+                            </div>
+                            <div class="text-gray-600 ml-2">4.7/5</div>
+                        </div>
+                        <p class="text-gray-600 font-semibold">Michael Johnson</p>
+                        <p class="text-gray-500">Owner, MNO Builders</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQs Section -->
+        <section class="FAQs w-full mx-auto px-5 py-6 bg-white min-h-sceen">
+            <div class="flex flex-col items-center">
+                <h2 class="font-bold text-5xl mt-5 tracking-tight">
+                    FAQ
+                </h2>
+                <p class="text-neutral-500 text-xl mt-3">
+                    Frequenty asked questions
+                </p>
+            </div>
+            <div class="grid divide-y divide-neutral-200 max-w-xl mx-auto mt-8">
+                <div class="question py-5">
+                    <details class="group">
+                        <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
+                            <span>Why you have a price range instead of a single price for a service?</span>
+                            <span class="transition group-open:rotate-180">
+                                <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    viewBox="0 0 24 24" width="24">
+                                    <path d="M6 9l6 6 6-6"></path>
+                                </svg>
+                            </span>
+                        </summary>
+                        <p class="text-neutral-600 mt-3 group-open:animate-fadeIn">
+                            The exact cost depends on the type of material you need to use and the overall design you
+                            choose therefore we provide range instead of exact price.
+                        </p>
+                    </details>
+                </div>
+                <div class="question py-5">
+                    <details class="group">
+                        <summary class="flex justify-between items-center font-medium cursor-pointer list-none">
+                            <span>How do you take payments?</span>
+                            <span class="transition group-open:rotate-180">
+                                <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor"
+                                    stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                    viewBox="0 0 24 24" width="24">
+                                    <path d="M6 9l6 6 6-6"></path>
+                                </svg>
+                            </span>
+                        </summary>
+                        <p class="text-neutral-600 mt-3 group-open:animate-fadeIn">
+                            We take from 10-20% of the payment in advance and rest of the payment within 10 days of
+                            project completion.
+                        </p>
+                    </details>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="px-5 bg-gray-900 text-white py-10 md:px-8 pb-0">
+        <div class="container md:flex justify-between">
+            <div class="footer-section">
+                <img src="https://via.placeholder.com/150" alt="Nazim Fabrication Logo" class="w-24 mb-4">
+                <p class="mb-2 font-bold">Nazim Fabrication</p>
+                <p class="mb-2">Shop no 2, Sujata CHS, Plot no 143, Sector-13</p>
+                <p class="mb-2">Kharghar, Navi Mumbai</p>
+                <p class="mb-2">Pin code: 410210</p>
+                <p class="flex items-center space-x-2">
+                    <span class="material-symbols-outlined">
+                        mail
+                    </span>
+                    <a href="mailto:info@nazimfabrication.com" class="hover:text-gray-400">nazimansari957@gmail.com</a>
+                </p>
+                <p class="flex items-center space-x-2 mt-2"><span class="material-symbols-outlined">
+                        phone
+                    </span><a href="tel:+918108524895" class="hover:text-gray-400">+91 8108524895</a></p>
+            </div>
+
+            <!-- Sitemap -->
+            <div class="footer-section">
+                <h4 class="text-lg font-bold mb-4">Sitemap</h4>
+                <ul>
+                    <li><a href="#" class="hover:text-gray-400">Home</a></li>
+                    <li><a href="#" class="hover:text-gray-400">About Us</a></li>
+                    <li><a href="#" class="hover:text-gray-400">Services</a></li>
+                    <li><a href="#" class="hover:text-gray-400">Portfolio</a></li>
+                    <li><a href="#" class="hover:text-gray-400">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Social Icons -->
+            <div class="footer-section">
+                <h4 class="text-lg font-bold mb-4">Connect with Us</h4>
+                <div class="flex flex-col space-y-2">
+                    <a href="#" class="hover:text-gray-400 block">Facebook</a>
+                    <a href="#" class="hover:text-gray-400 block">Instagram</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright Section -->
+        <div class="container mx-auto py-10 pb-5 text-gray-300 text-center">
+            <p>&copy; 2024 Nazim Fabrication. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+<script src="../static/scripts/global.js"></script>
+
+</html>

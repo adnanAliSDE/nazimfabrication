@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nazim Fabrication | Home</title>
     <link rel="stylesheet" href="static/styles/main.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="shortcut icon" href="static/media/images/favicon.png" type="image/png">
 
     <link rel="stylesheet"
@@ -25,7 +26,7 @@
             <a href="/index.html" class="text-white hover:text-gray-300">Home</a>
             <a href="/index.html#about-us" class="text-white hover:text-gray-300">About Us</a>
             <a href="/services.html" class="text-white hover:text-gray-300">Services</a>
-            <a href="#reviews" class="text-white hover:text-gray-300">Reviews</a>
+            <a href="index.html#reviews" class="text-white hover:text-gray-300">Reviews</a>
             <a href="/gallery.html" class="text-white hover:text-gray-300">Gallery</a>
         </nav>
 
@@ -54,7 +55,7 @@
                 <a href="/index.html" class="text-white hover:text-gray-300">Home</a>
                 <a href="/index.html#about-us" class="text-white hover:text-gray-300">About Us</a>
                 <a href="/services.html" class="text-white hover:text-gray-300">Services</a>
-                <a href="#reviews" class="text-white hover:text-gray-300">Reviews</a>
+                <a href="index.html#reviews" class="text-white hover:text-gray-300">Reviews</a>
                 <a href="/gallery.html" class="text-white hover:text-gray-300">Gallery</a>
                 <a href="#contact-us" class="text-white hover:text-gray-300">Contact Us</a>
                 <!-- Close button -->
@@ -74,172 +75,14 @@
     </header>
 
     <main>
-        <!-- Hero Section with Background Image using Tailwind CSS -->
-        <section
-            class="hero bg-cover bg-center bg-[url('../media/images/hero.jpg')] text-white py-20 px-4 md:px-12 lg:px-20">
-            <div class="container mx-auto">
-                <div class="text-center">
-                    <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4">Quality Metal Fabrication Services
-                    </h1>
-                    <p class="text-lg md:text-xl mb-8">Transforming your ideas into durable metal structures</p>
-                    <a href="#services"
-                        class="bg-primary-500 hover:bg-primary-600 text-white px-6 py-3 rounded-full uppercase text-sm md:text-base font-semibold shadow-lg transition duration-300">Explore
-                        Our Services</a>
-                </div>
+        <section class="bg-white dark:bg-gray-800 h-full py-6 sm:py-8 lg:py-12">
+            <section id="images-container"
+                class="mx-auto max-w-screen-2xl px-4 md:px-8 grid grid-cols-2 gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8">
+
+            </section>
             </div>
         </section>
 
-        <!-- Services Section -->
-        <section id="services" class="services px-5 bg-gray-100 py-20">
-            <div class="container mx-auto">
-                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Our Services</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Service Card 1 -->
-                    <div class="bg-white rounded-lg shadow-md flex flex-col justify-between">
-                        <!-- Service Image -->
-                        <img src="static/media/images/services/ms_gate.jpg" alt="Metal Gates"
-                            class="w-full h-48 object-cover rounded-t-lg">
-                        <div class="p-6">
-                            <!-- Service Title -->
-                            <h3 class="text-xl font-semibold mb-2">MS Gate</h3>
-                            <!-- Pricing Range -->
-                            <p class="text-gray-600 mb-2">Pricing Range: ₹800 - ₹1400</p>
-                            <!-- Service Description -->
-                            <p class="text-gray-600 mb-4">We specialize in designing and fabricating custom metal gates
-                                for residential and commercial properties.</p>
-                            <!-- Inquire Now CTA -->
-                            <a href="tel:8108524895"
-                                class="text-white bg-primary-500 hover:bg-primary-600 px-4 py-2 rounded-md font-semibold">Inquire
-                                Now</a>
-                        </div>
-                    </div>
-
-                    <!-- Service Card 2 -->
-                    <div class="bg-white rounded-lg shadow-md flex flex-col justify-between">
-                        <!-- Service Image -->
-                        <img src="static/media/images/services/ss_railing.jpg" alt="Steel Railings"
-                            class="w-full h-48 object-cover rounded-t-lg">
-                        <div class="p-6">
-                            <!-- Service Title -->
-                            <h3 class="text-xl font-semibold mb-2">Steel Railings</h3>
-                            <!-- Pricing Range -->
-                            <p class="text-gray-600 mb-2">Pricing Range: ₹800-₹1400 per running foot</p>
-                            <!-- Service Description -->
-                            <p class="text-gray-600 mb-4">Our expert craftsmen create durable and stylish steel railings
-                                to enhance the safety and aesthetics of your property.</p>
-                            <!-- Inquire Now CTA -->
-                            <a href="tel:8108524895"
-                                class="text-white bg-primary-500 hover:bg-primary-600 px-4 py-2 rounded-md font-semibold">Inquire
-                                Now</a>
-                        </div>
-                    </div>
-
-                    <!-- Service Card 3 -->
-                    <div class="bg-white rounded-lg shadow-md flex flex-col justify-between">
-                        <!-- Service Image -->
-                        <img src="static/media/images/services/rolling_shutter.jpg" alt="Rolling Shutter"
-                            class="w-full h-48 object-cover rounded-t-lg">
-                        <div class="p-6">
-                            <!-- Service Title -->
-                            <h3 class="text-xl font-semibold mb-2">Rolling Shutter</h3>
-                            <!-- Pricing Range -->
-                            <p class="text-gray-600 mb-2">Pricing Range: ₹200-₹350 per sq foot</p>
-                            <!-- Service Description -->
-                            <p class="text-gray-600 mb-4">We offer high-quality rolling shutters to protect your
-                                property
-                                from the elements while adding value and functionality.</p>
-                            <!-- Inquire Now CTA -->
-                            <a href="tel:8108524895"
-                                class="text-white bg-primary-500 hover:bg-primary-600 px-4 py-2 rounded-md font-semibold">Inquire
-                                Now</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- View All Services Link -->
-                <div class="text-center mt-8">
-                    <a href="#" class="text-primary-500 hover:text-primary-700 text-lg font-semibold">View All
-                        Services</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- About Us Section -->
-        <section id="about-us" class="about-us px-5 bg-white py-20">
-            <div class="container mx-auto">
-                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">About Us</h2>
-                <div class="flex flex-col md:flex-row items-center justify-center md:justify-between">
-                    <!-- About Us Image -->
-                    <div class="w-full md:w-1/2 mb-8 md:mb-0 md:mr-8">
-                        <img src="https://images.pexels.com/photos/73833/weld-hot-soldering-radio-welder-73833.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                            alt="About Us Image" class="w-full h-[350px] object-cover rounded-lg shadow-md">
-                    </div>
-                    <!-- About Us Content -->
-                    <div class="w-full md:w-1/2">
-                        <p class="text-gray-600 mb-4">Nazim Fabricators has been a trusted name in metal fabrication for
-                            over 15 years. We take pride in our craftsmanship and dedication to quality, serving clients
-                            in Kharghar, Navi Mumbai, and beyond.</p>
-                        <p class="text-gray-600 mb-4">Our team of skilled fabricators specializes in a wide range of
-                            metal fabrication services, including gate fabrication, grill design, rolling shutters,
-                            collapsible gates, steel railing, roofing sheds, aluminum sliding doors, and more.</p>
-                        <p class="text-gray-600 mb-4">At Nazim Fabricators, we believe in delivering superior
-                            craftsmanship, innovative design solutions, and exceptional customer service. Our goal is to
-                            exceed our clients' expectations and build lasting relationships based on trust and
-                            reliability.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="reviews" class="testimonials px-5 py-20">
-            <div class="container mx-auto">
-                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Our Happy Customers</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Testimonial 1 -->
-                    <div class="bg-white rounded-lg shadow-md p-6">
-                        <blockquote class="text-lg text-gray-800 italic mb-4">
-                            "Fanstatic work..good person"
-                        </blockquote>
-                        <div class="flex items-center justify-between mb-2">
-                            <div class="text-yellow-400">
-                                ★★★★★
-                            </div>
-                            <div class="text-gray-600 ml-2">5/5</div>
-                        </div>
-                        <p class="text-gray-600 font-semibold">Vijay Salunkhe</p>
-                        <!-- <p class="text-gray-500">CEO, ABC Builders</p> -->
-                    </div>
-
-                    <!-- Testimonial 3 -->
-                    <div class="bg-white rounded-lg shadow-md p-6">
-                        <blockquote class="text-lg text-gray-800 italic mb-4">
-                            "Very Hard working people."
-                        </blockquote>
-                        <div class="flex items-center justify-between mb-2">
-                            <div class="text-yellow-400">
-                                ★★★★☆
-                            </div>
-                            <div class="text-gray-600 ml-2">4.3/5</div>
-                        </div>
-                        <p class="text-gray-600 font-semibold">Adnan Ali</p>
-                        <!-- <p class="text-gray-500">Owner, MNO Builders</p> -->
-                    </div>
-                    <!-- Testimonial 2 -->
-                    <div class="bg-white rounded-lg shadow-md p-6">
-                        <blockquote class="text-lg text-gray-800 italic mb-4">
-                            "Good work"
-                        </blockquote>
-                        <div class="flex items-center justify-between mb-2">
-                            <div class="text-yellow-400">
-                                ★★★★★
-                            </div>
-                            <div class="text-gray-600 ml-2">5/5</div>
-                        </div>
-                        <p class="text-gray-600 font-semibold">Omkar Nalawade</p>
-                        <!-- <p class="text-gray-500">Founder, XYZ Construction</p> -->
-                    </div>
-
-                </div>
-            </div>
-        </section>
 
         <!-- FAQs Section -->
         <section class="FAQs w-full mx-auto px-5 py-6 bg-white min-h-sceen">
@@ -366,6 +209,7 @@
         </div>
     </footer>
 </body>
+<script src="static/scripts/gallery.js"></script>
 <script src="static/scripts/global.js"></script>
 
 </html>

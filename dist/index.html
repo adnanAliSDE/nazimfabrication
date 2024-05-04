@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nazim Fabrication | Home</title>
-
+    <link rel="stylesheet" href="static/styles/main.css">
+    <link rel="shortcut icon" href="static/media/images/favicon.png" type="image/png">
 
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
-    <link rel="stylesheet" crossorigin href="/assets/index-CWLXwuXr.css">
 </head>
 
 <body class="bg-gray-50">
@@ -22,10 +22,11 @@
 
         <!-- Navigation Menu (Desktop and Tablet) -->
         <nav class="hidden md:flex items-center space-x-6">
-            <a href="#about-us" class="text-white hover:text-gray-300">About Us</a>
-            <a href="#services" class="text-white hover:text-gray-300">Services</a>
+            <a href="/index.html" class="text-white hover:text-gray-300">Home</a>
+            <a href="/index.html#about-us" class="text-white hover:text-gray-300">About Us</a>
+            <a href="/services.html" class="text-white hover:text-gray-300">Services</a>
             <a href="#reviews" class="text-white hover:text-gray-300">Reviews</a>
-            <a href="#contact-us" class="text-white hover:text-gray-300">Contact Us</a>
+            <a href="/gallery.html" class="text-white hover:text-gray-300">Gallery</a>
         </nav>
 
 
@@ -33,7 +34,7 @@
         <section class="mobile-wrapper md:hidden overflow-hidden relative flex items-center justify-end space-x-6">
 
             <!-- Call Now CTA (Mobile) -->
-            <a href="tel:1234567890"
+            <a href="tel:8108524895"
                 class="md:hidden text-white bg-primary-500 hover:bg-primary-600 px-4 py-2 rounded-md flex items-center">
                 <span class="material-symbols-outlined">
                     call
@@ -50,11 +51,12 @@
             <div id="overlay-menu"
                 class="hidden fixed inset-0 bg-primary-900 z-50 flex-col items-center justify-center space-y-6 transition-opacity duration-300 ease-in-out">
                 <!-- Menu items -->
-                <a href="#about-us" class="text-white hover:text-gray-300">About Us</a>
-                <a href="#services" class="text-white hover:text-gray-300">Services</a>
+                <a href="/index.html" class="text-white hover:text-gray-300">Home</a>
+                <a href="/index.html#about-us" class="text-white hover:text-gray-300">About Us</a>
+                <a href="/services.html" class="text-white hover:text-gray-300">Services</a>
                 <a href="#reviews" class="text-white hover:text-gray-300">Reviews</a>
+                <a href="/gallery.html" class="text-white hover:text-gray-300">Gallery</a>
                 <a href="#contact-us" class="text-white hover:text-gray-300">Contact Us</a>
-
                 <!-- Close button -->
                 <button id="close-menu" class="text-white absolute top-4 right-4 focus:outline-none">
                     <span class="material-symbols-outlined">
@@ -66,7 +68,7 @@
 
 
         <!-- Contact Us CTA (Tablet and Desktop) -->
-        <a href="/contact"
+        <a href="#contact-us"
             class="hidden md:inline-block text-white bg-primary-500 hover:bg-primary-600 px-4 py-2 rounded-md">Contact
             Us</a>
     </header>
@@ -74,7 +76,7 @@
     <main>
         <!-- Hero Section with Background Image using Tailwind CSS -->
         <section
-            class="hero bg-cover bg-center bg-[url('../media/images/hero.webp')] text-white py-20 px-4 md:px-12 lg:px-20">
+            class="hero bg-cover bg-center bg-[url('../media/images/hero.jpg')] text-white py-20 px-4 md:px-12 lg:px-20">
             <div class="container mx-auto">
                 <div class="text-center">
                     <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4">Quality Metal Fabrication Services
@@ -95,18 +97,18 @@
                     <!-- Service Card 1 -->
                     <div class="bg-white rounded-lg shadow-md flex flex-col justify-between">
                         <!-- Service Image -->
-                        <img src="/assets/gate-CRbRmHx_.jpg" alt="Metal Gates"
+                        <img src="static/media/images/services/ms_gate.jpg" alt="Metal Gates"
                             class="w-full h-48 object-cover rounded-t-lg">
                         <div class="p-6">
                             <!-- Service Title -->
-                            <h3 class="text-xl font-semibold mb-2">Metal Gates</h3>
+                            <h3 class="text-xl font-semibold mb-2">MS Gate</h3>
                             <!-- Pricing Range -->
                             <p class="text-gray-600 mb-2">Pricing Range: ₹800 - ₹1400</p>
                             <!-- Service Description -->
                             <p class="text-gray-600 mb-4">We specialize in designing and fabricating custom metal gates
                                 for residential and commercial properties.</p>
                             <!-- Inquire Now CTA -->
-                            <a href="#"
+                            <a href="tel:8108524895"
                                 class="text-white bg-primary-500 hover:bg-primary-600 px-4 py-2 rounded-md font-semibold">Inquire
                                 Now</a>
                         </div>
@@ -115,7 +117,7 @@
                     <!-- Service Card 2 -->
                     <div class="bg-white rounded-lg shadow-md flex flex-col justify-between">
                         <!-- Service Image -->
-                        <img src="/assets/railing-bBdqBrGK.jpg" alt="Steel Railings"
+                        <img src="static/media/images/services/ss_railing.jpg" alt="Steel Railings"
                             class="w-full h-48 object-cover rounded-t-lg">
                         <div class="p-6">
                             <!-- Service Title -->
@@ -126,7 +128,7 @@
                             <p class="text-gray-600 mb-4">Our expert craftsmen create durable and stylish steel railings
                                 to enhance the safety and aesthetics of your property.</p>
                             <!-- Inquire Now CTA -->
-                            <a href="#"
+                            <a href="tel:8108524895"
                                 class="text-white bg-primary-500 hover:bg-primary-600 px-4 py-2 rounded-md font-semibold">Inquire
                                 Now</a>
                         </div>
@@ -135,7 +137,7 @@
                     <!-- Service Card 3 -->
                     <div class="bg-white rounded-lg shadow-md flex flex-col justify-between">
                         <!-- Service Image -->
-                        <img src="/assets/shutter-C4y7ImXk.jpg" alt="Roofing Sheds"
+                        <img src="static/media/images/services/rolling_shutter.jpg" alt="Rolling Shutter"
                             class="w-full h-48 object-cover rounded-t-lg">
                         <div class="p-6">
                             <!-- Service Title -->
@@ -147,7 +149,7 @@
                                 property
                                 from the elements while adding value and functionality.</p>
                             <!-- Inquire Now CTA -->
-                            <a href="#"
+                            <a href="tel:8108524895"
                                 class="text-white bg-primary-500 hover:bg-primary-600 px-4 py-2 rounded-md font-semibold">Inquire
                                 Now</a>
                         </div>
@@ -194,48 +196,47 @@
                     <!-- Testimonial 1 -->
                     <div class="bg-white rounded-lg shadow-md p-6">
                         <blockquote class="text-lg text-gray-800 italic mb-4">
-                            "Great service! Nazim Fabricators delivered exceptional quality work within the promised
-                            timeline. Highly recommended!"
-                        </blockquote>
-                        <div class="flex items-center justify-between mb-2">
-                            <div class="text-yellow-400">
-                                ★★★★☆
-                            </div>
-                            <div class="text-gray-600 ml-2">4.5/5</div>
-                        </div>
-                        <p class="text-gray-600 font-semibold">John Doe</p>
-                        <p class="text-gray-500">CEO, ABC Builders</p>
-                    </div>
-                    <!-- Testimonial 2 -->
-                    <div class="bg-white rounded-lg shadow-md p-6">
-                        <blockquote class="text-lg text-gray-800 italic mb-4">
-                            "Professional and efficient! Nazim Fabricators exceeded our expectations. Will definitely
-                            work with them again!"
+                            "Fanstatic work..good person"
                         </blockquote>
                         <div class="flex items-center justify-between mb-2">
                             <div class="text-yellow-400">
                                 ★★★★★
                             </div>
-                            <div class="text-gray-600 ml-2">4.8/5</div>
+                            <div class="text-gray-600 ml-2">5/5</div>
                         </div>
-                        <p class="text-gray-600 font-semibold">Jane Smith</p>
-                        <p class="text-gray-500">Founder, XYZ Construction</p>
+                        <p class="text-gray-600 font-semibold">Vijay Salunkhe</p>
+                        <!-- <p class="text-gray-500">CEO, ABC Builders</p> -->
                     </div>
+
                     <!-- Testimonial 3 -->
                     <div class="bg-white rounded-lg shadow-md p-6">
                         <blockquote class="text-lg text-gray-800 italic mb-4">
-                            "Amazing craftsmanship! Nazim Fabricators pays attention to detail and delivers top-notch
-                            results."
+                            "Very Hard working people."
                         </blockquote>
                         <div class="flex items-center justify-between mb-2">
                             <div class="text-yellow-400">
                                 ★★★★☆
                             </div>
-                            <div class="text-gray-600 ml-2">4.7/5</div>
+                            <div class="text-gray-600 ml-2">4.3/5</div>
                         </div>
-                        <p class="text-gray-600 font-semibold">Michael Johnson</p>
-                        <p class="text-gray-500">Owner, MNO Builders</p>
+                        <p class="text-gray-600 font-semibold">Adnan Ali</p>
+                        <!-- <p class="text-gray-500">Owner, MNO Builders</p> -->
                     </div>
+                    <!-- Testimonial 2 -->
+                    <div class="bg-white rounded-lg shadow-md p-6">
+                        <blockquote class="text-lg text-gray-800 italic mb-4">
+                            "Good work"
+                        </blockquote>
+                        <div class="flex items-center justify-between mb-2">
+                            <div class="text-yellow-400">
+                                ★★★★★
+                            </div>
+                            <div class="text-gray-600 ml-2">5/5</div>
+                        </div>
+                        <p class="text-gray-600 font-semibold">Omkar Nalawade</p>
+                        <!-- <p class="text-gray-500">Founder, XYZ Construction</p> -->
+                    </div>
+
                 </div>
             </div>
         </section>
@@ -295,7 +296,7 @@
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <!-- Shop Photo -->
                     <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                        <img src="/assets/shop-BHQvcYMS.JPG" alt="Shop Photo" class="w-full ">
+                        <img src="static/media/images/shop.JPG" alt="Shop Photo" class="w-full ">
                     </div>
                     <!-- Contact Information -->
                     <div class="bg-white rounded-lg shadow-md p-6 flex flex-col justify-center">
@@ -304,7 +305,7 @@
                         <p class="text-gray-600 mb-2">Kharghar, Navi Mumbai</p>
                         <p class="text-gray-600 mb-4">Pin code: 410210</p>
                         <!-- Call Now Button -->
-                        <a href="tel:+911234567890"
+                        <a href="tel:8108524895"
                             class="text-center text-white bg-primary-500 hover:bg-primary-600 px-6 py-3 rounded-md font-semibold mb-4">Call
                             Now</a>
                         <!-- View on Google Maps Button -->
@@ -319,17 +320,16 @@
 
     <footer class="px-5 bg-gray-900 text-white py-10 md:px-8 pb-0">
         <div class="container md:flex justify-between">
-            <div class="footer-section">
-                <img src="https://via.placeholder.com/150" alt="Nazim Fabrication Logo" class="w-24 mb-4">
-                <p class="mb-2 font-bold">Nazim Fabrication</p>
+            <div class="footer-section mb-5 md:mb-0">
+                <p class="mb-3 font-bold ">Nazim Fabrication</p>
                 <p class="mb-2">Shop no 2, Sujata CHS, Plot no 143, Sector-13</p>
                 <p class="mb-2">Kharghar, Navi Mumbai</p>
                 <p class="mb-2">Pin code: 410210</p>
-                <p class="flex items-center space-x-2">
+                <p class="mt-4 flex items-center space-x-2">
                     <span class="material-symbols-outlined">
                         mail
                     </span>
-                    <a href="mailto:info@nazimfabrication.com" class="hover:text-gray-400">nazimansari957@gmail.com</a>
+                    <a href="mailto:nazimansari957@gmail.com" class="hover:text-gray-400">nazimansari957@gmail.com</a>
                 </p>
                 <p class="flex items-center space-x-2 mt-2"><span class="material-symbols-outlined">
                         phone
@@ -337,23 +337,25 @@
             </div>
 
             <!-- Sitemap -->
-            <div class="footer-section">
-                <h4 class="text-lg font-bold mb-4">Sitemap</h4>
-                <ul>
-                    <li><a href="#" class="hover:text-gray-400">Home</a></li>
-                    <li><a href="#about-us" class="hover:text-gray-400">About Us</a></li>
-                    <li><a href="#services" class="hover:text-gray-400">Services</a></li>
-                    <li><a href="#reviews" class="hover:text-gray-400">Reviews</a></li>
-                    <li><a href="#contact-us" class="hover:text-gray-400">Contact Us</a></li>
+            <div class="footer-section mb-5 md:mb-0">
+                <h4 class="text-lg font-bold mb-3">Sitemap</h4>
+                <ul class="flex flex-col space-y-2">
+                    <li><a href="index.html" class="hover:text-gray-400">Home</a></li>
+                    <li><a href="index.html#about-us" class="text-white hover:text-gray-300">About Us</a></li>
+                    <li><a href="/services.html" class="text-white hover:text-gray-300">Services</a></li>
+                    <li><a href="/gallery.html" class="text-white hover:text-gray-300">Gallery</a></li>
+                    <li><a href="index.html#reviews" class="text-white hover:text-gray-300">Reviews</a></li>
+                    <li><a href="#contact-us" class="text-white hover:text-gray-300">Contact Us</a></li>
                 </ul>
             </div>
 
             <!-- Social Icons -->
             <div class="footer-section">
-                <h4 class="text-lg font-bold mb-4">Connect with Us</h4>
+                <h4 class="text-lg font-bold mb-3">Connect with Us</h4>
                 <div class="flex flex-col space-y-2">
                     <a href="#" class="hover:text-gray-400 block">Facebook</a>
-                    <a href="#" class="hover:text-gray-400 block">Instagram</a>
+                    <a href="https://www.instagram.com/nazim_fabrication_mumbai/"
+                        class="hover:text-gray-400 block">Instagram</a>
                 </div>
             </div>
         </div>
@@ -364,6 +366,6 @@
         </div>
     </footer>
 </body>
-<script src="assets/global.js"></script>
+<script src="static/scripts/global.js"></script>
 
 </html>
